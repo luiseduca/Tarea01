@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finca Bosque de Niebla Birding & Nature</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./aves.html">Aves</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>            
+        </ul>
+    </nav>
+
+    <h1> Contacto y/o reserva</h1>
+
+    <div class="container">
+        <form>
+            <section class="section-flex">
+                <article class="element-form">
+                    <div class="label">
+                        <label for="">Tipo de conctacto</label>
+                        <select name="tipomensaje" id="tipomensaje">
+                            <option value="-">Seleccione una Opcion</option>
+                            <option value="1">Contacto</option>
+                            <option value="2">Reserva</option>
+                            <option value="3">Queja</option>
+                        </select>
+                    </div>
+                </article>
+
+                <article class="element-form">
+                    <div class="label">
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre completo">
+                </article>
+
+                <article class="elemnt-form">
+                    <div class="label">
+                        <label for="">Email</label>
+                    </div>
+                    <input type="text" name="email" id="email" placeholder="Escribe tu correo">
+                </article> 
+                
+                <article class="elemnt-form">
+                    <div class="label">
+                        <label for="">¿Que tipo de visitante eres?</label>
+                    </div>
+                    <input type="checkbox" name="echk1" id="echk1" value="Amante"> Amante de la naturaleza
+                    <input type="checkbox" name="echk2" id="echk2" value="Observador"> Observador de aves
+                    <input type="checkbox" name="echk3" id="echk3" value="Fotografo"> Fotógrafo de aves
+                    <input type="checkbox" name="echk3" id="echk3" value="Todas"> Todas las anteriores
+                </article> 
+
+                <article class="elemnt-form">
+                    <div class="label">
+                        <label for="">Comentario</label>
+                    </div>
+                    <textarea name="comentario" id="comentario" cols="100" rows="10"></textarea>
+                </article>
+                
+                <article class="btn-article">
+                    <button type="submit" onclick="validar()"> Enviar Datos </button>                       
+                </article>                 
+        
+            </section>
+
+        </form>
+    </div>
+</body>
+
+<footer>
+    <div>
+        <p>Creado por Luis Eduardo Camacho Legro</p>
+   </div>
+</footer>
+
+<script src="./js/javascript.js"></script>
+
+</html>
